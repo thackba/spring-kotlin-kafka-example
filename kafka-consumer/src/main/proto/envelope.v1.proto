@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option java_outer_classname = "EnvelopeProto";
+
+package dev.thackba.transfer.envelope.v1;
+
+message Header {
+    string content = 1;
+    int32 version = 2;
+}
+
+message Envelope {
+    Header header = 1;
+    bytes payload = 2;
+}

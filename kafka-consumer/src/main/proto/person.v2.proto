@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option java_outer_classname = "PersonProto";
+
+package dev.thackba.transfer.person.v2;
+
+message Person {
+    string id = 1;
+    string firstname = 2;
+    string surname = 3;
+    string email = 4;
+}
